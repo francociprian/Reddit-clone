@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { buttonVariants } from "./ui/button";
-import { Globe } from 'lucide-react';
+import { buttonVariants } from "./ui/Button";
+import { Icons } from "./Icons";
 
 const Navbar = () => {
   return (
@@ -8,10 +8,13 @@ const Navbar = () => {
       <div className='container max-w-7xl h-full mx-auto flex items-center justify-between gap-2'>
         {/* logo */}
         <Link href='/' className='flex gap-2 items-center'>
-          <Globe />
-          <p className='hidden text-zinc-700 text-sm font-medium md:block'>Reddit Clone</p>
+          <Icons.logo className='h-8 w-8 sm:h-6 sm:w-6' />
+          <p className='hidden text-zinc-700 text-sm font-medium md:block'>Franddit</p>
         </Link>
 
+      {/* Search bar */}
+  
+      {/* Actions */}
         <Link href='/sign-in' className={buttonVariants()}>
           Sign In
         </Link>

@@ -1,4 +1,4 @@
-
+import SignIn from '@/components/SignIn';
 import { FC } from 'react';
 import Link from 'next/link';
 import { buttonVariants } from '@/components/ui/Button';
@@ -19,7 +19,7 @@ const page: FC = () => {
           Home
         </Link>
 
-        {/* <SignIn /> */}
+        <SignIn />
       </div>
     </div>
   )

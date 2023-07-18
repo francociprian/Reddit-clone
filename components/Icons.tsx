@@ -1,6 +1,7 @@
-import { LucideProps, MessageSquare, User } from "lucide-react";
+import { LucideProps, MessageSquare, User, Globe } from "lucide-react";
 
 export const Icons = {
+  logo: Globe,
   user: User,
   google: (props: LucideProps) => (
     <svg {...props} viewBox='0 0 24 24'>

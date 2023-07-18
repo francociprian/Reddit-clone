@@ -8,14 +8,16 @@ import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Reddit Clone',
+  title: 'Franddit',
   description: 'A Reddit clone built with Next.js and TypeScript.',
 }
 
 export default function RootLayout({
   children,
+  modal,
 }: {
   children: React.ReactNode
+  modal: React.ReactNode
 }) {
   return (
     <html
@@ -23,7 +25,10 @@ export default function RootLayout({
       className={cn('bg-white text-slate-900 antialiased', inter.className)}
     >
       <body className="min-h-screen pt-12 bg-slate-50 antialiased">
+        
         <Navbar />
+
+        {modal}
         <div className='container max-w-7xl mx-auto h-full pt-12'>
           {children}
         </div>
